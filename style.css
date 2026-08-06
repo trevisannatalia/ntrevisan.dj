@@ -308,3 +308,39 @@ footer {
     height: 22px;
 }
 
+/* Seletor de idioma */
+.lang-switch {
+    display: flex;
+    margin-left: 6px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.lang-btn {
+    background: transparent;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    font-size: 0.85rem;
+    font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.lang-btn.active {
+    background: #fff;
+    color: #000;
+}
+
+.lang-btn:not(.active):hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+@media (max-width: 800px) {
+    .lang-switch {
+        margin-left: 0;
+        margin-top: 6px;
+    }
+}
+

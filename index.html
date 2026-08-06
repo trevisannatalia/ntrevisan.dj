@@ -1,11 +1,40 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000">
+
     <title>ntrevisan | DJ Oficial</title>
+    <meta name="description"
+        content="ntrevisan — DJ. Sets exclusivos, mixes e conteúdo musical. Ouça no SoundCloud, assista no YouTube e siga no Instagram.">
+    <link rel="canonical" href="https://ntrevisan.dj/">
+
+    <!-- Open Graph / Facebook / Instagram / WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ntrevisan.dj/">
+    <meta property="og:site_name" content="ntrevisan">
+    <meta property="og:title" content="ntrevisan | DJ Oficial">
+    <meta property="og:description"
+        content="Sets exclusivos, mixes e conteúdo musical. Ouça no SoundCloud, assista no YouTube e siga no Instagram.">
+    <meta property="og:image" content="https://ntrevisan.dj/images/logo.png">
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
+    <meta property="og:image:alt" content="ntrevisan DJ logo">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:locale:alternate" content="en_GB">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ntrevisan | DJ Oficial">
+    <meta name="twitter:description"
+        content="Sets exclusivos, mixes e conteúdo musical. Ouça no SoundCloud, assista no YouTube e siga no Instagram.">
+    <meta name="twitter:image" content="https://ntrevisan.dj/images/logo.png">
+
     <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="apple-touch-icon" href="images/logo.png">
+
     <link rel="stylesheet" href="style.css">
     <!-- Google Fonts: Red Hat Display -->
     <link href="https://fonts.googleapis.com/css?family=Red+Hat+Display:wght@400;700&display=swap" rel="stylesheet">
@@ -18,12 +47,12 @@
         <nav>
             <div class="logo">ntrevisan</div>
             <ul>
-                <li><a href="#home">Início</a></li>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#music">Música</a></li>
-                <li><a href="#youtube">YouTube</a></li>
-                <li><a href="#gallery">Instagram</a></li>
-                <li><a href="#contact">Contato</a></li>
+                <li><a href="#home" data-i18n="nav.home">Início</a></li>
+                <li><a href="#about" data-i18n="nav.about">Sobre</a></li>
+                <li><a href="#music" data-i18n="nav.music">Música</a></li>
+                <li><a href="#youtube" data-i18n="nav.youtube">YouTube</a></li>
+                <li><a href="#gallery" data-i18n="nav.gallery">Instagram</a></li>
+                <li><a href="#contact" data-i18n="nav.contact">Contato</a></li>
             </ul>
             <div class="social-icons">
                 <a href="https://www.instagram.com/ntrevisan.dj/" class="fa fa-instagram" target="_blank"
@@ -38,6 +67,10 @@
                             d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z" />
                     </svg>
                 </a>
+                <div class="lang-switch" role="group" aria-label="Language selector">
+                    <button type="button" class="lang-btn" data-lang="pt" aria-pressed="false">PT</button>
+                    <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+                </div>
             </div>
         </nav>
     </header>
@@ -46,34 +79,24 @@
         <div class="hero-content">
             <h1>ntrevisan</h1>
             <p>DJ</p>
-            <a href="#music" class="btn">Ouça Agora</a>
+            <a href="#music" class="btn" data-i18n="hero.cta">Ouça Agora</a>
         </div>
     </section>
 
     <section id="about" class="section-description">
-        <h2>Sobre</h2>
+        <h2 data-i18n="about.heading">Sobre</h2>
         <div class="descriptions-all-topics">
-            <p>
-                Music, food, photography, and arts that express emotions, tastes, and sensations—these are my passions.
-                By
-                profession, I work in IT, but everything else is my hobby and creative escape. Music is a special way to
-                connect with feelings, and I love curating and mixing tracks that tell a story.
-            </p>
-            <br>
-            <p>
+            <p data-i18n="about.text">
                 Música, culinária, fotografia e artes que expressam sentimentos, gostos e sensações—essas são minhas
                 paixões. Profissionalmente, atuo com TI, mas todo o resto é meu hobby e minha válvula de escape
-                criativa. A
-                música é uma forma especial de conexão com os sentimentos, e adoro selecionar e mixar faixas que contem
-                uma
-                história.
+                criativa. A música é uma forma especial de conexão com os sentimentos, e adoro selecionar e mixar
+                faixas que contem uma história.
             </p>
         </div>
-
     </section>
 
     <section id="music" class="music">
-        <h2>Música</h2>
+        <h2 data-i18n="music.heading">Música</h2>
         <div class="music-player">
             <!-- Player SoundCloud -->
             <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
@@ -83,17 +106,11 @@
     </section>
 
     <section id="youtube" class="youtube section-descriptions">
-        <h2>YouTube</h2>
+        <h2 data-i18n="youtube.heading">YouTube</h2>
         <div class="descriptions-all-topics">
-            <p>
-                Check out my exclusive sets and mixes on my YouTube channel. Each video is a new musical experience to
-                enjoy
-                and feel.
-            </p>
-            <br>
-            <p>
-                Confira meus sets e mixes exclusivos no canal do YouTube. Cada vídeo é uma nova experiência musical para
-                sentir e curtir.
+            <p data-i18n="youtube.text">
+                Confira meus sets e mixes exclusivos no canal do YouTube. Cada vídeo é uma nova experiência musical
+                para sentir e curtir.
             </p>
         </div>
 
@@ -103,58 +120,56 @@
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen>
             </iframe>
-            <a href="https://www.youtube.com/@ntrevisan-dj" target="_blank" class="btn">Acesse o Canal</a>
+            <a href="https://www.youtube.com/@ntrevisan-dj" target="_blank" class="btn"
+                data-i18n="youtube.cta">Acesse o Canal</a>
         </div>
     </section>
 
     <section id="gallery" class="gallery section-descriptions">
-        <h2>Instagram</h2>
+        <h2 data-i18n="gallery.heading">Instagram</h2>
         <div class="descriptions-all-topics">
-            <p>
-                Follow my daily life, behind the scenes, photos, and inspirations on Instagram. Music, art, and
-                lifestyle in
-                every post.
-            </p>
-            <br>
-            <p>
-                Acompanhe meu dia a dia, bastidores, fotos e inspirações no Instagram. Música, arte e lifestyle em cada
-                post.
+            <p data-i18n="gallery.text">
+                Acompanhe meu dia a dia, bastidores, fotos e inspirações no Instagram. Música, arte e lifestyle em
+                cada post.
             </p>
         </div>
 
         <!-- Elfsight Instagram Feed | Untitled Instagram Feed -->
         <script src="https://static.elfsight.com/platform/platform.js" async></script>
         <div class="elfsight-app-bc2f5ee9-b271-430a-9231-6daa0b4c9d71" data-elfsight-app-lazy></div>
+        <noscript>
+            <p style="text-align:center;">
+                <a href="https://www.instagram.com/ntrevisan.dj/" target="_blank">@ntrevisan.dj on Instagram</a>
+            </p>
+        </noscript>
     </section>
 
     <section id="contact" class="contact section-descriptions">
-        <h2>Contato</h2>
+        <h2 data-i18n="contact.heading">Contato</h2>
         <div class="descriptions-all-topics">
-            <p>
-                Want to get in touch, book me for events, or share ideas? Send your message using the form below and
-                let’s
-                connect.
-            </p>
-            <br>
-            <p>
+            <p data-i18n="contact.text">
                 Quer falar comigo, contratar para eventos ou compartilhar ideias? Envie sua mensagem pelo formulário
-                abaixo
-                e vamos nos conectar.
+                abaixo e vamos nos conectar.
             </p>
         </div>
 
         <form id="contactForm" action="https://formspree.io/f/xldbkgjl" method="POST">
-            <input type="text" name="name" placeholder="Seu nome" required>
-            <input type="email" name="email" placeholder="Seu e-mail" required>
-            <textarea name="message" placeholder="Sua mensagem" required></textarea>
-            <button type="submit">Enviar</button>
+            <input type="text" name="name" data-i18n-placeholder="contact.namePlaceholder" placeholder="Seu nome"
+                required>
+            <input type="email" name="email" data-i18n-placeholder="contact.emailPlaceholder" placeholder="Seu e-mail"
+                required>
+            <textarea name="message" data-i18n-placeholder="contact.messagePlaceholder" placeholder="Sua mensagem"
+                required></textarea>
+            <button type="submit" data-i18n="contact.send">Enviar</button>
         </form>
         <div id="formMessage"></div>
     </section>
 
     <footer>
-        <p>&copy; 2025 ntrevisan. Todos os direitos reservados.</p>
+        <p data-i18n="footer.text">&copy; 2025 ntrevisan. Todos os direitos reservados.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
