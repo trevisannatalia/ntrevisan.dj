@@ -27,6 +27,7 @@ const translations = {
         gallery: {
             heading: 'Instagram',
             text: 'Acompanhe meu dia a dia, bastidores, fotos e inspirações no Instagram. Música, arte e lifestyle em cada post.',
+            follow: 'Seguir no Instagram',
         },
         contact: {
             heading: 'Contato',
@@ -68,6 +69,7 @@ const translations = {
         gallery: {
             heading: 'Instagram',
             text: 'Follow my daily life, behind the scenes, photos, and inspirations on Instagram. Music, art, and lifestyle in every post.',
+            follow: 'Follow on Instagram',
         },
         contact: {
             heading: 'Contact',

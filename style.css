@@ -202,9 +202,41 @@ h2 {
 
 
 /* Instagram Gallery */
-#gallery .elfsight-app-bc2f5ee9-b271-430a-9231-6daa0b4c9d71 {
-    margin: 0 auto;
-    max-width: 900px;
+.instagram-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    max-width: 320px;
+    margin: 30px auto 0;
+    padding: 30px 24px;
+    border: 1px solid #fff;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.instagram-card__avatar {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fff;
+    margin-bottom: 6px;
+}
+
+.instagram-card__handle {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.instagram-card__name {
+    color: #ccc;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.instagram-card__follow {
+    margin-top: 4px;
 }
 
 /* Contato */
